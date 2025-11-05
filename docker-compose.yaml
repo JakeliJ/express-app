@@ -1,4 +1,8 @@
 services:
+  app:
+    build: .
+    ports: 8088:8080
+    image: jjjoku/express-app:latest
   watchtower:
     image: containrrr/watchtower
     environment:
